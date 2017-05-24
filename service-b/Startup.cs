@@ -41,7 +41,7 @@ namespace ServiceB
             app.ApplicationServices.GetService<TelemetryClient>().Context.Properties["Service name"] = "service-b";
             app.Run(async context =>
             {
-                await context.Response.WriteAsync("Hello from service B running on " + Environment.MachineName + " for Azure Bootcamp");
+                await context.Response.WriteAsync("Hello from service B running on " + Environment.MachineName + " for SG Virtual");
             });
         }
     }
